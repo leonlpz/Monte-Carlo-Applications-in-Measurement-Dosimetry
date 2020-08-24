@@ -9,26 +9,26 @@ The code presented here shows a simple MC simulation of how particles move in di
 Input: Interaction probability distributions. Random Number Generator.
 Output: Dose distributions, fluence spectra, …
 # Simple photon simulation 
-	Say: \Sigma_{total}=\Sigma_{compton}+\Sigma_{pair}\ \ \ \ \ \ \ \ cm^{-1}
-	![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
-	Select 2 random numbers R1, R2
-	Uniform between 0 and 1
-	Whole careers devoted to doing this 
-	Cycle length
+Say: $\Sigma_{total}=\Sigma_{compton}+\Sigma_{pair} cm^{-1}$
+	
+Select 2 random numbers R1, R2
+Uniform between 0 and 1
+Whole careers devoted to doing this 
+Cycle length
 # Photon transport (cont)
 How far does photon go before interacting?
-x=-ln\left(R1\right)/\Sigma_{total}\ \ \ \ \ \ \ \ \ \ cm
+$x=-ln\left(R1\right)/\Sigma_{total}cm$
 Is exponentially distributed [0, infinite].
 With a mean of 
-1/\Sigma_{total}
+$1/\Sigma_{total}$
 After going x, what interaction occurs?
-ifR2<\frac{\Sigma_{compton}}{\Sigma_{total}}
+$if R2<\frac{\Sigma_{compton}}{\Sigma_{total}}$
 Then a Compton scatter occurs otherwise a pair production event occurs 
 # How is simulation used?
-	Score whatever data wanted
-	Average distance to interaction 
-	How many of each type?
-	Energy deposited by each type
-	Etc
-	More useful in complex cases
+* Score whatever data wanted
+  - Average distance to interaction 
+  - How many of each type?
+  - Energy deposited by each type
+  - Etc
+* More useful in complex cases
 
