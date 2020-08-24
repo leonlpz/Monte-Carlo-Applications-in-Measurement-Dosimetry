@@ -10,6 +10,7 @@ Input: Interaction probability distributions. Random Number Generator.
 Output: Dose distributions, fluence spectra, …
 # Simple photon simulation 
 	Say: \Sigma_{total}=\Sigma_{compton}+\Sigma_{pair}\ \ \ \ \ \ \ \ cm^{-1}
+	![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
 	Select 2 random numbers R1, R2
 	Uniform between 0 and 1
 	Whole careers devoted to doing this 
